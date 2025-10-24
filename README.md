@@ -93,4 +93,4 @@ En estas dos pantallas se agrega un chat con una IA impulsada por Groq con um mo
 </p>
 <hr style="margin: 30px 0; border: 1px solid #ccc;">
 
-> ⚠️ Nota: El chat IA requiere clave de API Groq para funcionar; actualmente está deshabilitado en la versión de demostración.
+⚠️ Nota: El chat IA requiere clave de API Groq para funcionar; actualmente está deshabilitado en la versión de demostración.
