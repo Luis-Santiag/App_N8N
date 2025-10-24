@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergencia_titulo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/azul_principal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Números de emergencia predeterminados -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_bomberos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bomberos\n123"
+            android:textColor="@color/blanco"
+            android:backgroundTint="@color/rojo_emergencia"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_policia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Policía\n110"
+            android:textColor="@color/blanco"
+            android:backgroundTint="@color/rojo_emergencia"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Contactos de emergencia guardados -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/emergencia_contactos"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:id="@+id/tv_contactos_titulo"/>
+
+    <LinearLayout
+        android:id="@+id/layout_contactos_emergencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- Los botones de contactos se agregarán dinámicamente -->
+    </LinearLayout>
+</LinearLayout>

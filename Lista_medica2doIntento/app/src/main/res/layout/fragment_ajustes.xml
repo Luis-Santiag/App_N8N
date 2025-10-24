@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_principal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Ajustes de la aplicación"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/azul_principal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:text="Tamaño de tipografía"
+            android:layout_marginTop="8dp"/>
+        <RadioGroup
+            android:id="@+id/rg_tamanio_fuente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_fuente_estandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estándar"/>
+            <RadioButton
+                android:id="@+id/rb_fuente_grande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grande"/>
+        </RadioGroup>
+
+        <TextView
+            android:text="Modo de pantalla"
+            android:layout_marginTop="16dp"/>
+        <RadioGroup
+            android:id="@+id/rg_modo_pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_modo_claro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claro"/>
+            <RadioButton
+                android:id="@+id/rb_modo_oscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oscuro"/>
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo_principal"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/tv_titulo_chat"
+        android:text="Asistente Médico"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/azul_principal"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:id="@+id/barra_chat"
+        android:text="_________________________________________________________"
+        android:textStyle="bold"
+
+        android:height="22dp"
+        android:textColor="@color/azul_principal"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="always"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="bottom">
+        <EditText
+            android:id="@+id/et_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/quantum_black_100"
+            android:hint="Escribe tu consulta médica..."
+            android:imeOptions="actionSend"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="@color/azul_principal"
+            android:textColor="@color/blanco"/>
+    </LinearLayout>
+</LinearLayout>

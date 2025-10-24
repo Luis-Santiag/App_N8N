@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_principal">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_editar_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_edit"
+                    android:visibility="gone"
+                    app:fabSize="mini"
+                    app:backgroundTint="@color/azul_principal"
+                    app:tint="@color/blanco"/>
+
+                <TextView
+                    android:id="@+id/tv_titulo_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/btn_editar_perfil"
+                    android:text="@string/perfil_titulo"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="@color/azul_principal"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perfil_datos_personales"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/azul_principal"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/et_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_hint_nombres"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:autofillHints="name"/>
+
+            <EditText
+                android:id="@+id/et_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_hint_telefono"
+                android:inputType="phone"
+                android:maxLength="8"
+                android:textColor="#000000"
+                android:autofillHints="phone"/>
+
+            <EditText
+                android:id="@+id/et_dpi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/perfil_hint_dpi"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textColor="#000000"
+                android:autofillHints="username"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/perfil_hint_grupo_sanguineo"
+                android:textColor="@color/azul_principal"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_grupo_sanguineo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alergias"
+                android:textColor="@color/azul_principal"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/et_alergias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alergias conocidas"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:gravity="top|start"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contactos de Emergencia"
+                android:textColor="@color/azul_principal"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_emergencia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono de emergencia 1"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:maxLength="8"/>
+
+            <EditText
+                android:id="@+id/et_emergencia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono de emergencia 2"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:maxLength="8"/>
+
+            <EditText
+                android:id="@+id/et_emergencia3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono de emergencia 3"
+                android:inputType="phone"
+                android:textColor="#000000"
+                android:maxLength="8"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Sección de tratamientos -->
+            <LinearLayout
+                android:id="@+id/layout_tratamientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tratamientos Actuales"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/flecha_tratamientos"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:rotation="0"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_tratamientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese los tratamientos actuales"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Sección de antecedentes médicos -->
+            <LinearLayout
+                android:id="@+id/layout_antecedentes_medicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Antecedentes Médicos"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/flecha_antecedentes_medicos"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:rotation="0"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_antecedentes_medicos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese los antecedentes médicos"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/layout_antecedentes_familiares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Antecedentes Familiares"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/flecha_antecedentes_familiares"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:rotation="0"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_antecedentes_familiares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese los antecedentes familiares"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:background="@drawable/bg_borde_azul"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Sección Google Drive -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="☁️ Respaldo en la nube"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/azul_principal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_google_drive_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No conectado"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginBottom="12dp"/>
+
+                    <Button
+                        android:id="@+id/btn_google_drive_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conectar Google Drive"
+                        android:backgroundTint="@color/verde_claro"
+                        android:textColor="@color/negro"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_guardar_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/azul_principal"
+                android:textColor="@color/blanco"/>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

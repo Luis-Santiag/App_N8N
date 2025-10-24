@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MediNotas</string>
+    <string name="titulo_app">Lista de Notas</string>
+    <string name="boton_emergencia">Botón de emergencia</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_notas">Notas</string>
+    <string name="menu_crear_nota">Crear Nota</string>
+    <string name="menu_chat">Chat IA</string>
+    <string name="menu_mapa">Mapa</string>
+    <string name="perfil_titulo">Perfil</string>
+    <string name="perfil_datos_personales">Datos personales</string>
+    <string name="perfil_hint_nombres">Nombres completos</string>
+    <string name="perfil_hint_telefono">Teléfono</string>
+    <string name="perfil_hint_dpi">DPI (#### ##### ####)</string>
+    <string name="perfil_hint_grupo_sanguineo">Grupo sanguíneo</string>
+    <string name="perfil_hint_alergias">Alergias registradas</string>
+    <string name="perfil_numeros_emergencia">Números de emergencia (máx. 3)</string>
+    <string name="perfil_hint_emergencia1">Emergencia 1</string>
+    <string name="perfil_hint_emergencia2">Emergencia 2</string>
+    <string name="perfil_hint_emergencia3">Emergencia 3</string>
+    <string name="perfil_tratamientos">Tratamientos actuales</string>
+    <string name="perfil_hint_tratamientos">Describa tratamientos actuales</string>
+    <string name="perfil_antecedentes_medicos">Antecedentes médicos</string>
+    <string name="perfil_hint_antecedentes_medicos">Describa antecedentes médicos</string>
+    <string name="perfil_antecedentes_familiares">Antecedentes familiares</string>
+    <string name="perfil_hint_antecedentes_familiares">Describa antecedentes familiares</string>
+    <string name="perfil_tamanio_texto">Tamaño de texto</string>
+    <string name="perfil_fuente_estandar">Estándar</string>
+    <string name="perfil_fuente_grande">Grande</string>
+    <string name="perfil_guardar">Guardar perfil</string>
+    <string name="emergencia_titulo">Números de Emergencia</string>
+    <string name="emergencia_contactos">Contactos de Emergencia</string>
+    <string name="titulo_notas">Notas</string>
+</resources>

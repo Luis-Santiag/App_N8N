@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="negro">#FF000000</color>
+    <color name="verde_claro">#A8E6CF</color>
+    <color name="azul_celeste">#B3E5FC</color>
+    <color name="azul_principal">#2196F3</color>
+    <color name="gris_claro">#F5F5F5</color>
+    <color name="rojo_emergencia">#FF5252</color>
+    <color name="fondo_principal">#FFFFFFFF</color>
+    <color name="rojo_error">#D32F2F</color>
+</resources>

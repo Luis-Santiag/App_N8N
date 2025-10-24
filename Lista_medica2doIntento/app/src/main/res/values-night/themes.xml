@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lista_medica2doIntento" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/azul_principal</item>
+        <item name="colorPrimaryVariant">@color/azul_celeste</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/verde_claro</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="android:windowBackground">#222831</item>
+        <item name="colorSurface">#393E46</item>
+        <item name="colorOnSurface">@color/blanco</item>
+    </style>
+</resources>
