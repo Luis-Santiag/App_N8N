@@ -2,11 +2,13 @@
 
 ## Descripción del proyecto
 
-Aplicación para gestionar notas médicas (guardado en Google Drive opcional). Implementada en Java con arquitectura sencilla; incluye autenticación con Google (clase `GoogleAuthManager`) y pantallas como `WelcomeActivity` y `MainActivity`. Pensada para uso local y sincronización con Drive si el usuario lo autoriza, , se han añadido funciones para que el usuario pueda iniciar sesion con su cuenta de google y compartir con el las notas medicas que cree dentro de la aplicacion con un flujo de N8N y asi pueda tenerlas en la nube. Ademas de esto el usuario puede hablar con un chat IA para consultas medicas y recomendaciones, ademas, de un mapa para poder localizar hospitales o farmacias mas cercanas a su localidad.
+Aplicación para gestionar notas médicas, con opción de guardado en Google Drive. Implementada en Java con arquitectura sencilla, incluye autenticación con Google (`GoogleAuthManager`) y pantallas como `WelcomeActivity` y `MainActivity`. 
+
+El usuario puede iniciar sesión con su cuenta de Google y compartir sus notas médicas mediante un flujo de N8N. Además, la app ofrece un chat IA para consultas médicas básicas y un mapa para localizar hospitales o farmacias cercanas.
 
 ## Cambios desde la propuesta inicial
 
-Desde la primera version de la APP se hicieron algunos cambios menores dentro de la estructura y se agregaron algunas coasas.
+Desde la primera version de la APP se hicieron algunos cambios menores dentro de la estructura y se agregaron algunas cosas.
 
 Cambios: 
 1. Ahora hay validaciones en las notas, ya no se pueden agregar notas vacias.
@@ -19,16 +21,14 @@ Implementaciones:
 
 ## Instrucciones de instalación
 
-1. Clonar el repositorio:
-2. Abrir el proyecto en Android Studio (recomendado: Android Studio Narwhal 4 Feature Drop | 2025.1.4).
-
-3. Si usas Windows, ejecutar el wrapper de Gradle desde la terminal del proyecto o usar la interfaz de Android Studio:
-4. Conectar un dispositivo o arrancar un emulador y ejecutar desde Android Studio: Run > app.
-
-5. (Opcional) Configurar credenciales de Google:
-   - Añadir el archivo `google-services.json` a `app/` si usas Firebase/Google APIs.
-   - Configurar SHA-1 en la consola de Google Cloud para autenticación
-6. (Opcional) Instalar el APK agregado al repositorio.
+1. Clonar el repositorio.
+3. Abrir el proyecto en Android Studio (recomendado: Narwhal 4 Feature Drop | 2025.1.4).
+4. Ejecutar Gradle Wrapper desde la terminal o usar la interfaz de Android Studio.
+5. Conectar un dispositivo o arrancar un emulador y ejecutar: `Run > app`.
+6. (Opcional) Configurar credenciales de Google:
+   - Añadir `google-services.json` a `app/`.
+   - Configurar SHA-1 en la consola de Google Cloud.
+7. (Opcional) Instalar el APK incluido en el repositorio.
 
 ## Requisitos
 
@@ -47,7 +47,7 @@ implementation 'com.google.android.material:material:1.9.0'
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 // Google Sign-In
-implementation 'com.google.android.gms:play-services-auth:20.7.0' g
+implementation 'com.google.android.gms:play-services-auth:20.7.0'
 
 // Opcional: Google Drive / APIs (si usas sincronización)
 implementation 'com.google.api-client:google-api-client-android:1.34.1'
@@ -87,3 +87,5 @@ En estas dos pantallas se agrega un chat con una IA impulsada por Groq con um mo
   <img src="ElementosGraficos/Vid4.gif" alt="Video de Pantalla de IA y Mapa" />
 </p>
 <hr style="margin: 30px 0; border: 1px solid #ccc;">
+
+> ⚠️ Nota: El chat IA requiere clave de API Groq para funcionar; actualmente está deshabilitado en la versión de demostración.
