@@ -46,5 +46,5 @@ implementation 'com.google.apis:google-api-services-drive:v3-rev20230308-2.0.0'
 ### Inicio de Sesion con google
 Se agrego un inicio de sesion con google para poder acceder a los datos de google del usuario.
 
-![Video de Inicio de Sesion](ElementosGraficos/VidSesion.mp4)
+![Video de Inicio de Sesion](ElementosGraficos/VidSesion.gif)
 
