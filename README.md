@@ -14,7 +14,8 @@ Aplicación Android para gestionar notas médicas (guardado en Google Drive opci
 
 5. (Opcional) Configurar credenciales de Google:
    - Añadir el archivo `google-services.json` a `app/` si usas Firebase/Google APIs.
-   - Configurar SHA-1 en la consola de Google Cloud para autenticación.
+   - Configurar SHA-1 en la consola de Google Cloud para autenticación
+6. (Opcional) Instalar el APK agregado al repositorio.
 
 ## Requisitos
 
