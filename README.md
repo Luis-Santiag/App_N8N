@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-Aplicación Android para gestionar notas médicas (guardado en Google Drive opcional). Implementada en Java/Kotlin con arquitectura sencilla; incluye autenticación con Google (clase `GoogleAuthManager`) y pantallas como `WelcomeActivity` y `MainActivity`. Pensada para uso local y sincronización con Drive si el usuario lo autoriza.
+Aplicación para gestionar notas médicas (guardado en Google Drive opcional). Implementada en Java con arquitectura sencilla; incluye autenticación con Google (clase `GoogleAuthManager`) y pantallas como `WelcomeActivity` y `MainActivity`. Pensada para uso local y sincronización con Drive si el usuario lo autoriza, , se han añadido funciones para que el usuario pueda iniciar sesion con su cuenta de google y compartir con el las notas medicas que cree dentro de la aplicacion con un flujo de N8N y asi pueda tenerlas en la nube. Ademas de esto el usuario puede hablar con un chat IA para consultas medicas y recomendaciones, ademas, de un mapa para poder localizar hospitales o farmacias mas cercanas a su localidad.
 
 ## Instrucciones de instalación
 
@@ -50,4 +50,23 @@ Se agrego un inicio de sesion con google para poder acceder a los datos de googl
   <img src="ElementosGraficos/VidSesion.gif" alt="Video de Inicio de Sesion" />
 </p>
 
+### Perfil
+Se añade una pestaña para el perfil del usuario donde agrega sus datos y puede conectar y desconectar con cuentas de google distintas.
 
+<p align="center">
+  <img src="ElementosGraficos/VidPerfil.gif" alt="Video de Pantalla de Perfil" />
+</p>
+
+### Notas
+El usuario puede añadir notas, eligiendo entre, notas medicas, recetas o notas generales de la persona, estas se muestran en una pestaña donde se muestra una parte desplegable para mostrar el contenido completo de la nota, el usuario ve opciones para poder eliminarlas o compartirla a otras persnas en un pdf con formato agradable, ademas, cuando se crea una nota, si el usuario inicio sesion, estas se comparten al usuario automaticamente a traves de Google Drive. 
+
+<p align="center">
+  <img src="ElementosGraficos/VidNotas.gif" alt="Video de Pantalla de Notas" />
+</p>
+
+### Mapa y Chat IA
+En estas dos pantallas se agrega un chat con una IA impulsada por Groq con um modelo de Open IA, esta solo responde consultas basicas sobre el contexto, saludos o gestiones medicas, en el mapa, se pueden localizar farmacias u hospitales que esten en un radio de 5km a la redonda del usuario, debajo del mapa se muestran tarjetas con el nombre del lugar, direccion y si hay dentro de google, el telefono de contacto. (No hay mucha presentacion de la IA porque se me acabaron los tokens)
+
+<p align="center">
+  <img src="ElementosGraficos/Vid4.gif" alt="Video de Pantalla de IA y Mapa" />
+</p>
