@@ -6,6 +6,11 @@ Aplicación para gestionar notas médicas, con opción de guardado en Google Dri
 
 El usuario puede iniciar sesión con su cuenta de Google y compartir sus notas médicas mediante un flujo de N8N. Además, la app ofrece un chat IA para consultas médicas básicas y un mapa para localizar hospitales o farmacias cercanas.
 
+## Video de Presentacion
+
+[![Video de Presentacion](ElementosGraficos/MediNotas.png)](videoalgo)
+
+
 ## Cambios desde la propuesta inicial
 
 Desde la primera version de la APP se hicieron algunos cambios menores dentro de la estructura y se agregaron algunas cosas.
