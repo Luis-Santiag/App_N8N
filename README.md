@@ -25,15 +25,11 @@ Implementaciones:
    
 2. Abrir el proyecto en Android Studio (recomendado: Narwhal 4 Feature Drop | 2025.1.4).
    
-3. Ejecutar Gradle Wrapper desde la terminal o usar la interfaz de Android Studio.
+3. Sincronizar el Graddle desde la terminal o usar la interfaz de Android Studio.
    
 4. Conectar un dispositivo o arrancar un emulador y ejecutar: `Run > app`.
-   
-5. (Opcional) Configurar credenciales de Google:
-   - Añadir `google-services.json` a `app/`.
-   - Configurar SHA-1 en la consola de Google Cloud.
      
-6. (Opcional) Instalar el APK incluido en el repositorio.
+5. (Opcional) Instalar el APK incluido en el repositorio.
 
 ## Requisitos
 
