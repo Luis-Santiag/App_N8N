@@ -172,7 +172,7 @@ public class ChatFragment extends Fragment {
             btnEnviar.setEnabled(false);
 
             // Considera mover la API key a un lugar más seguro como gradle.properties
-            if (OPENAI_API_KEY.equals("sk-tu-clave-real-aqui") || OPENAI_API_KEY.isEmpty()) { 
+            if (OPENAI_API_KEY.equals("quite la key") || OPENAI_API_KEY.isEmpty()) {
                 simularRespuesta(texto);
                 return;
             }
