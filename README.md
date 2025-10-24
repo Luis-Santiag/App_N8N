@@ -22,13 +22,18 @@ Implementaciones:
 ## Instrucciones de instalación
 
 1. Clonar el repositorio.
-3. Abrir el proyecto en Android Studio (recomendado: Narwhal 4 Feature Drop | 2025.1.4).
-4. Ejecutar Gradle Wrapper desde la terminal o usar la interfaz de Android Studio.
-5. Conectar un dispositivo o arrancar un emulador y ejecutar: `Run > app`.
-6. (Opcional) Configurar credenciales de Google:
+   
+2. Abrir el proyecto en Android Studio (recomendado: Narwhal 4 Feature Drop | 2025.1.4).
+   
+3. Ejecutar Gradle Wrapper desde la terminal o usar la interfaz de Android Studio.
+   
+4. Conectar un dispositivo o arrancar un emulador y ejecutar: `Run > app`.
+   
+5. (Opcional) Configurar credenciales de Google:
    - Añadir `google-services.json` a `app/`.
    - Configurar SHA-1 en la consola de Google Cloud.
-7. (Opcional) Instalar el APK incluido en el repositorio.
+     
+6. (Opcional) Instalar el APK incluido en el repositorio.
 
 ## Requisitos
 
