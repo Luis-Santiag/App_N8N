@@ -49,7 +49,7 @@ public class ChatFragment extends Fragment {
     // Endpoint Groq (compatible OpenAI) solicitado por el usuario
     private static final String OPENAI_API_URL = "https://api.groq.com/openai/v1/chat/completions";
     // Recuerda manejar tu API Key de forma segura, por ejemplo, desde gradle.properties o un archivo no versionado.
-    private static final String OPENAI_API_KEY = "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";
+    private static final String OPENAI_API_KEY = "llave quitada para subir";
     private static final String KEY_MESSAGES = "messages";
     private static final String KEY_SCROLL_POSITION = "scroll_position";
 
