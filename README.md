@@ -34,8 +34,17 @@ implementation 'com.google.android.material:material:1.9.0'
 implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
 // Google Sign-In
-implementation 'com.google.android.gms:play-services-auth:20.7.0'
+implementation 'com.google.android.gms:play-services-auth:20.7.0' g
 
 // Opcional: Google Drive / APIs (si usas sincronización)
 implementation 'com.google.api-client:google-api-client-android:1.34.1'
 implementation 'com.google.apis:google-api-services-drive:v3-rev20230308-2.0.0'
+```
+
+## Demostrativos
+
+### Inicio de Sesion con google
+Se agrego un inicio de sesion con google para poder acceder a los datos de google del usuario.
+
+![Video de Inicio de Sesion](ElementosGraficos/VidSesion.mp4)
+
