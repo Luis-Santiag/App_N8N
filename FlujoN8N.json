@@ -1,0 +1,130 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "=cb1a04b1-110e-4951-8f88-f053923e60dd",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -544,
+        -272
+      ],
+      "id": "972f1edf-9c96-4a66-b690-f1d566995ad7",
+      "name": "Webhook",
+      "webhookId": "cb1a04b1-110e-4951-8f88-f053923e60dd",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "=file",
+        "name": "={{ $('Webhook').item.json.body.nombre_archivo }}",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "131pVwZsTG3ZNjrmFS7CVmbvszo0RuRPE",
+          "mode": "list",
+          "cachedResultName": "DocumentosNotas",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/131pVwZsTG3ZNjrmFS7CVmbvszo0RuRPE"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -352,
+        -272
+      ],
+      "id": "960d771c-eed8-46a6-9418-31948116fa80",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "XVCTpaHq81EYWopK",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "share",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "permissionsUi": {
+          "permissionsValues": {
+            "role": "reader",
+            "type": "user",
+            "emailAddress": "={{ $('Webhook').item.json.body.user_email }}"
+          }
+        },
+        "options": {
+          "transferOwnership": false
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -176,
+        -272
+      ],
+      "id": "4cd8feae-91bb-4f90-9d39-9b9b9054bdcf",
+      "name": "Share file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "XVCTpaHq81EYWopK",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload file": {
+      "main": [
+        [
+          {
+            "node": "Share file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Share file": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "68816ff3-cd3d-43a9-813c-8a8d7b3fb41c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "207cdcf0af66e1dbbd5370ffe16a12f77e2cf125267af7c07bb86ad1caa4245f"
+  },
+  "id": "8ADESEQSM0EDqLrZ",
+  "tags": []
+}
