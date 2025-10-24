@@ -14,10 +14,6 @@ El usuario puede iniciar sesión con su cuenta de Google y compartir sus notas m
   </a>
 </p>
 
-<p aling="center">
- <a href="Video Presentacion"><b>Clicl para ir al video</b><a/>
-<p/>
-
 ## Cambios desde la propuesta inicial
 
 Desde la primera version de la APP se hicieron algunos cambios menores dentro de la estructura y se agregaron algunas cosas.
